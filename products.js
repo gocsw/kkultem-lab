@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 11,
+    name: "아이스 선풍기 에어컨 쿨링 조끼 (공조복)",
+    cat: "여름",
+    desc: "등에 팬 2개 — 입는 에어컨, 여름 외근·현장 필수 · KC인증",
+    link: "https://link.coupang.com/a/fvObrs3Vdc",
+    video: "https://youtube.com/shorts/9uVbqEORGnw",
+    hot: true },
+
   { no: 10,
     name: "트랙라인 전기 팻바이크 (자토바이)",
     cat: "출퇴근",
