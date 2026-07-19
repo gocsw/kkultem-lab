@@ -17,6 +17,13 @@
 
 window.PRODUCTS = [
 
+  { no: 9,
+    name: "애플 에어태그 2세대",
+    cat: "육아",
+    desc: "아이 가방에 쏙 — '나의 찾기' 앱으로 물건 위치 확인 (실시간 GPS 아님)",
+    link: "https://link.coupang.com/a/fvE9U6fmW4",
+    hot: true },
+
   { no: 8,
     name: "헤라 옴므 스킨·로션 2종 세트",
     cat: "케어",
