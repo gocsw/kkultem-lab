@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "육아",
     desc: "아이 가방에 쏙 — '나의 찾기' 앱으로 물건 위치 확인 (실시간 GPS 아님)",
     link: "https://link.coupang.com/a/fvE9U6fmW4",
+    img: "https://thumbnail.coupangcdn.com/thumbnails/remote/q89/image/rs_quotation_api/slkcphbv/fc3d7a73ee79458e88db791150db5579.jpg",
     hot: true },
 
   { no: 8,
