@@ -72,41 +72,40 @@
         cursor:pointer;font-family:inherit;}
   .chip[aria-pressed="true"]{background:var(--mint);border-color:var(--mint);color:#fff;}
 
-  /* ── 상품 카드 ── */
-  .list{display:grid;gap:10px;}
-  .item{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
-        padding:13px;display:flex;gap:13px;align-items:flex-start;
-        transition:border-color .15s, transform .15s;}
-  .item:hover{border-color:var(--mint);}
-  .no{flex:none;width:96px;height:96px;border-radius:14px;background:var(--navy);
-      color:#fff;display:grid;place-items:center;font-weight:800;font-size:32px;
+  /* ── 상품 카드 (인포크 스타일: 큰 카드 · 왼쪽 사진 · 번호 상품명 · 전체 클릭) ── */
+  .list{display:grid;gap:12px;}
+  .item{position:relative;background:var(--card);border:1px solid var(--line);
+        border-radius:18px;padding:14px 16px;display:flex;gap:14px;align-items:center;
+        box-shadow:0 1px 3px rgba(15,34,51,.05);
+        transition:box-shadow .15s, transform .12s, border-color .15s;}
+  .item:hover{border-color:var(--mint);box-shadow:0 8px 22px rgba(15,143,104,.13);
+        transform:translateY(-1px);}
+  .item:active{transform:translateY(0);}
+  /* 카드 전체를 덮는 구매 링크(stretched link) */
+  .stretch{position:absolute;inset:0;z-index:1;border-radius:18px;}
+  .no{flex:none;width:74px;height:74px;border-radius:14px;background:var(--navy);
+      color:#fff;display:grid;place-items:center;font-weight:800;font-size:26px;
       font-variant-numeric:tabular-nums;position:relative;overflow:hidden;}
   .no img{width:100%;height:100%;object-fit:cover;background:#fff;}
-  .no .tag{position:absolute;inset:auto 0 0 0;background:var(--honey);color:#3a2600;
-           font-size:11px;font-weight:800;text-align:center;letter-spacing:.04em;padding:1px 0;}
-  .no .numbadge{position:absolute;top:0;left:0;background:rgba(15,34,51,.85);color:#fff;
-           font-size:13px;font-weight:800;line-height:1;padding:3px 8px;
-           border-bottom-right-radius:10px;font-variant-numeric:tabular-nums;}
   .no .nofb{display:none;}
-  .no.imgfail img,.no.imgfail .numbadge{display:none;}
+  .no.imgfail img{display:none;}
   .no.imgfail .nofb{display:grid;place-items:center;width:100%;height:100%;
-           font-size:32px;font-weight:800;}
+           font-size:26px;font-weight:800;}
   .body{flex:1;min-width:0;}
-  .cat{display:inline-block;font-size:11px;font-weight:800;color:var(--mint-ink);
-       background:var(--mint-soft);border-radius:5px;padding:1px 7px;margin-bottom:4px;}
-  .name{font-size:15px;font-weight:700;margin:0 0 3px;line-height:1.35;}
-  .desc{font-size:12.5px;color:var(--soft);margin:0 0 10px;line-height:1.5;}
-  .btns{display:flex;gap:6px;flex-wrap:wrap;}
-  .buy{background:var(--honey);color:#3a2600;font-weight:800;font-size:13px;
-       padding:8px 15px;border-radius:99px;}
-  .buy:active{transform:scale(.97);}
-  .rev{border:1px solid var(--line-2);color:var(--soft);font-weight:700;font-size:13px;
-       padding:8px 13px;border-radius:99px;}
+  .name{font-size:16.5px;font-weight:700;margin:0;line-height:1.35;color:var(--ink);
+        display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .desc{font-size:12.5px;color:var(--soft);margin:3px 0 0;line-height:1.45;
+        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .rev{position:relative;z-index:2;flex:none;width:36px;height:36px;border-radius:50%;
+       border:1px solid var(--line-2);color:var(--mint-ink);background:var(--card);
+       display:grid;place-items:center;font-size:12px;text-decoration:none;}
+  .rev:hover{border-color:var(--mint);}
+  .chev{flex:none;color:var(--faint);font-size:24px;line-height:1;font-weight:400;}
 
   .empty{text-align:center;color:var(--faint);font-size:13.5px;padding:40px 0;}
   footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);
          font-size:11.5px;color:var(--faint);line-height:1.7;}
-  @media (max-width:360px){ .no{width:80px;height:80px;font-size:28px;} }
+  @media (max-width:360px){ .no{width:64px;height:64px;font-size:22px;} .item{padding:12px 13px;} }
 </style>
 </head>
 <body>
@@ -183,23 +182,21 @@
     el.className = 'item';
     var thumb = p.img
       ? '<img src="' + esc(p.img) + '" alt="" loading="lazy" onerror="this.closest(\'.no\').classList.add(\'imgfail\')">' +
-        '<span class="numbadge">' + esc(p.no) + '</span><span class="nofb">' + esc(p.no) + '</span>'
+        '<span class="nofb">' + esc(p.no) + '</span>'
       : esc(p.no);
-    var hot = p.hot ? '<span class="tag">인기</span>' : '';
+    var hot = p.hot ? ' 👍' : '';
     var review = p.video
-      ? '<a class="rev" href="' + esc(p.video) + '" target="_blank" rel="noopener">▶ 리뷰 영상</a>'
+      ? '<a class="rev" href="' + esc(p.video) + '" target="_blank" rel="noopener" aria-label="리뷰 영상 보기" title="리뷰 영상">▶</a>'
       : '';
     el.innerHTML =
-      '<div class="no">' + thumb + hot + '</div>' +
+      '<a class="stretch" href="' + esc(p.link) + '" target="_blank" rel="noopener nofollow sponsored" aria-label="' + esc(p.no) + '. ' + esc(p.name) + ' 최저가 보기"></a>' +
+      '<div class="no">' + thumb + '</div>' +
       '<div class="body">' +
-        (p.cat ? '<span class="cat">' + esc(p.cat) + '</span>' : '') +
-        '<p class="name">' + esc(p.no) + '. ' + esc(p.name) + '</p>' +
+        '<p class="name">' + esc(p.no) + '. ' + esc(p.name) + hot + '</p>' +
         (p.desc ? '<p class="desc">' + esc(p.desc) + '</p>' : '') +
-        '<div class="btns">' +
-          '<a class="buy" href="' + esc(p.link) + '" target="_blank" rel="noopener nofollow sponsored">🛒 최저가 확인하기</a>' +
-          review +
-        '</div>' +
-      '</div>';
+      '</div>' +
+      review +
+      '<span class="chev" aria-hidden="true">›</span>';
     return el;
   }
 

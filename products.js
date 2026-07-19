@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 10,
+    name: "트랙라인 전기 팻바이크 (자토바이)",
+    cat: "출퇴근",
+    desc: "지옥철 대신 출퇴근 대안 · 헬멧 필수, 구매 전 법규·스펙 꼭 확인",
+    link: "https://link.coupang.com/a/fvINYRzvQy",
+    img: "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/2e31/e093db0ea1621ee8b9a53128d823f8207a8f2edbcb98bf79760809f72046.png",
+    hot: true },
+
   { no: 9,
     name: "애플 에어태그 2세대",
     cat: "육아",
