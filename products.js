@@ -23,6 +23,7 @@ window.PRODUCTS = [
     desc: "등에 팬 2개 — 입는 에어컨, 여름 외근·현장 필수 · KC인증",
     link: "https://link.coupang.com/a/fvObrs3Vdc",
     video: "https://youtube.com/shorts/9uVbqEORGnw",
+    img: "vest11.png",
     hot: true },
 
   { no: 10,
