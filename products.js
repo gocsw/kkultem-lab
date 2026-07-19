@@ -23,6 +23,7 @@ window.PRODUCTS = [
     desc: "폰 올려놓으면 자동 재생 · 거치대+충전+RGB무드등 4in1",
     link: "https://link.coupang.com/a/fvQ3ECqDnM",
     video: "https://youtube.com/shorts/OuT7hSG_OdE",
+    img: "spk12.png",
     hot: true },
 
   { no: 11,
