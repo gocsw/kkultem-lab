@@ -17,13 +17,21 @@
 
 window.PRODUCTS = [
 
+  { no: 12,
+    name: "KBKXOZ 4in1 스마트 센서 블루투스 스피커",
+    cat: "데스크",
+    desc: "폰 올려놓으면 자동 재생 · 거치대+충전+RGB무드등 4in1",
+    link: "https://link.coupang.com/a/fvQ3ECqDnM",
+    video: "https://youtube.com/shorts/OuT7hSG_OdE",
+    hot: true },
+
   { no: 11,
     name: "아이스 선풍기 에어컨 쿨링 조끼 (공조복)",
     cat: "여름",
     desc: "등에 팬 2개 — 입는 에어컨, 여름 외근·현장 필수 · KC인증",
     link: "https://link.coupang.com/a/fvObrs3Vdc",
     video: "https://youtube.com/shorts/9uVbqEORGnw",
-    img: "vest11.png",
+    img: "vest-cool.png",
     hot: true },
 
   { no: 10,
