@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 13,
+    name: "SALANGE USB 별하늘 프로젝터 무드등",
+    cat: "수면",
+    desc: "천장에 은하수·달·별자리 · 360도 회전 + 밝기조절 · USB",
+    link: "https://link.coupang.com/a/fxEAMa7Ssm",
+    video: "https://youtube.com/shorts/txuOutlebCg",
+    hot: true },
+
   { no: 12,
     name: "KBKXOZ 4in1 스마트 센서 블루투스 스피커",
     cat: "데스크",
