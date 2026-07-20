@@ -23,6 +23,7 @@ window.PRODUCTS = [
     desc: "천장에 은하수·달·별자리 · 360도 회전 + 밝기조절 · USB",
     link: "https://link.coupang.com/a/fxEAMa7Ssm",
     video: "https://youtube.com/shorts/txuOutlebCg",
+    img: "star13.png",
     hot: true },
 
   { no: 12,
