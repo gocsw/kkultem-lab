@@ -17,6 +17,15 @@
 
 window.PRODUCTS = [
 
+  { no: 15,
+    name: "전동 세제 설거지 브러시",
+    cat: "주방",
+    desc: "버튼 누르면 세제 나오고 360도 회전 · 손목 부담 줄이고 걸이 보관",
+    link: "https://link.coupang.com/a/fzbb14YmGa",
+    video: "https://youtube.com/shorts/FivFth7wbRk",
+    img: "brush15.png",
+    hot: true },
+
   { no: 14,
     name: "두꺼비집 가리개 마그네틱 자석 액자",
     cat: "집꾸미기",
