@@ -17,6 +17,15 @@
 
 window.PRODUCTS = [
 
+  { no: 14,
+    name: "두꺼비집 가리개 마그네틱 자석 액자",
+    cat: "집꾸미기",
+    desc: "못생긴 배전함 가리고 굿즈·사진 전시대로 · 알루미늄 40x30",
+    link: "https://link.coupang.com/a/fy2BTQD0jQ",
+    video: "https://youtube.com/shorts/VxYNAPin6Iw",
+    img: "board14.png",
+    hot: true },
+
   { no: 13,
     name: "SALANGE USB 별하늘 프로젝터 무드등",
     cat: "수면",
