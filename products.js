@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 16,
+    name: "Gaayou 스마트 차량 디퓨저",
+    cat: "차량",
+    desc: "타면 자동 작동 · 나노 미스트 + 컬러 무드등 · 차량/실내 겸용",
+    link: "https://link.coupang.com/a/fAJpDiSsXA",
+    img: "diffuser16.png",
+    hot: true },
+
   { no: 15,
     name: "전동 세제 설거지 브러시",
     cat: "주방",
