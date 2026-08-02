@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 20,
+    name: "무아스 멀티 육각 시계 타이머 2세대",
+    cat: "데스크",
+    desc: "굴려서 놓으면 시작 · 면마다 5/10/20/30분 · 시계 겸용 · 화이트/옐로우/민트/스카이",
+    link: "https://link.coupang.com/a/fS2pTJVASy",
+    img: "timer20.png",
+    hot: true },
+
   { no: 19,
     name: "아기 불가사리 극세사 침낭 (곰귀 후드)",
     cat: "육아",
