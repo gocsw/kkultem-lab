@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "데스크",
     desc: "굴려서 놓으면 시작 · 면마다 5/10/20/30분 · 시계 겸용 · 화이트/옐로우/민트/스카이",
     link: "https://link.coupang.com/a/fS2pTJVASy",
+    video: "https://youtube.com/shorts/loXJ8bfN0NI",
     img: "timer20.png",
     hot: true },
 
