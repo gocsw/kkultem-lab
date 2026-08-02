@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "여름",
     desc: "얼굴 전체 덮는 마스크 + 펌프로 직접 충전 · 블랙/옐로우 · ⚠️ 0.5L는 수면 근처 수 분용, 깊이 잠수 금지",
     link: "https://link.coupang.com/a/fSUbs11mi4",
+    video: "https://youtube.com/shorts/OhK4KFnxwIQ",
     img: "scuba18.png",
     hot: true },
 
