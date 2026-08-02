@@ -17,11 +17,20 @@
 
 window.PRODUCTS = [
 
+  { no: 17,
+    name: "가스코 가죽컬러크림 15g",
+    cat: "차량",
+    desc: "까지고 벗겨진 가죽 메우는 크림 · 소파·차 시트·가방·구두 · 색상 28종",
+    link: "https://link.coupang.com/a/fSLG6if8ou",
+    img: "leather17.png",
+    hot: true },
+
   { no: 16,
     name: "Gaayou 스마트 차량 디퓨저",
     cat: "차량",
     desc: "타면 자동 작동 · 나노 미스트 + 컬러 무드등 · 차량/실내 겸용",
     link: "https://link.coupang.com/a/fAJpDiSsXA",
+    video: "https://youtube.com/shorts/77LGLxqdqfk",
     img: "diffuser16.png",
     hot: true },
 
