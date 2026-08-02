@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "차량",
     desc: "까지고 벗겨진 가죽 메우는 크림 · 소파·차 시트·가방·구두 · 색상 28종",
     link: "https://link.coupang.com/a/fSLG6if8ou",
+    video: "https://youtube.com/shorts/eWMtvpbkAks",
     img: "leather17.png",
     hot: true },
 
