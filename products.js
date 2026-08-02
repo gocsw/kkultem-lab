@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "육아",
     desc: "팔다리 쫙 벌어지는 별 모양 · 겉 알파카 벨벳 + 안 면직물 · 유모차 그대로 · 핑크/블루/그레이/카키",
     link: "https://link.coupang.com/a/fSZNw5W6Fg",
+    video: "https://youtube.com/shorts/1iZ7TkFF3aM",
     img: "baby19.png",
     hot: true },
 
