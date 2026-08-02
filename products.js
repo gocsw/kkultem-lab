@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 19,
+    name: "아기 불가사리 극세사 침낭 (곰귀 후드)",
+    cat: "육아",
+    desc: "팔다리 쫙 벌어지는 별 모양 · 겉 알파카 벨벳 + 안 면직물 · 유모차 그대로 · 핑크/블루/그레이/카키",
+    link: "https://link.coupang.com/a/fSZNw5W6Fg",
+    img: "baby19.png",
+    hot: true },
+
   { no: 18,
     name: "풀페이스 스노클 마스크 + 0.5L 미니 산소통 세트",
     cat: "여름",
