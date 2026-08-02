@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 18,
+    name: "풀페이스 스노클 마스크 + 0.5L 미니 산소통 세트",
+    cat: "여름",
+    desc: "얼굴 전체 덮는 마스크 + 펌프로 직접 충전 · 블랙/옐로우 · ⚠️ 0.5L는 수면 근처 수 분용, 깊이 잠수 금지",
+    link: "https://link.coupang.com/a/fSUbs11mi4",
+    img: "scuba18.png",
+    hot: true },
+
   { no: 17,
     name: "가스코 가죽컬러크림 15g",
     cat: "차량",
