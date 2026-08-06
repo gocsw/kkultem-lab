@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 21,
+    name: "스피큘엑스 알라딘 해초 필링 오리진필 세트 (5종)",
+    cat: "케어",
+    desc: "해면 스피큘로 문지르는 홈필링 · 5종 세트 · ⚠️ 사용 후 약 36시간 따끔거림, 1주간 음주·직사광선 주의, 민감성 피부는 사전 테스트",
+    link: "https://link.coupang.com/a/fZN9A01ldc",
+    img: "peel21.png",
+    hot: true },
+
   { no: 20,
     name: "무아스 멀티 육각 시계 타이머 2세대",
     cat: "데스크",
