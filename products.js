@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "주방",
     desc: "물만 넣고 세제 없이 고온 스팀 · 가스레인지 기름때·수전 물때·창틀 · 노즐 여러 개 · ⚠️ 고온 화상 주의",
     link: "https://link.coupang.com/a/f2vj7vyBgW",
+    video: "https://youtube.com/shorts/ceCXDtiedpc",
     img: "steam22.png",
     hot: true },
 
