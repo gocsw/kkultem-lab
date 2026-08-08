@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 22,
+    name: "가정용 고압 스팀청소기",
+    cat: "주방",
+    desc: "물만 넣고 세제 없이 고온 스팀 · 가스레인지 기름때·수전 물때·창틀 · 노즐 여러 개 · ⚠️ 고온 화상 주의",
+    link: "https://link.coupang.com/a/f2vj7vyBgW",
+    img: "steam22.png",
+    hot: true },
+
   { no: 21,
     name: "스피큘엑스 알라딘 해초 필링 오리진필 세트 (5종)",
     cat: "케어",
