@@ -152,6 +152,29 @@
   var qEl = document.getElementById('q');
   var activeCat = '전체';
 
+  /* ── 이동 방식 판정 (한 번만 계산) ──────────────────────────────
+     쿠팡 링크는 "앱 실행 → 300ms 뒤 웹" 구조의 중간 페이지를 거친다.
+     유튜브·인스타·카카오톡 인앱 브라우저에서는 target="_blank" 가
+     무시돼 아무 일도 안 일어나는 경우가 있다. 그러면 클릭 자체가
+     기록되지 않아 성과가 잡히지 않는다.
+     → 모바일·인앱에서는 target 을 빼고 같은 탭에서 그냥 이동시킨다.
+       (브라우저 기본 동작이라 어떤 브라우저에서도 가장 확실하다)          */
+  var NEWTAB = (function () {
+    var ua = navigator.userAgent || '';
+    var 모바일 = /Android|iPhone|iPad|iPod|IEMobile|Opera Mini|Mobile/i.test(ua);
+    var 인앱 =
+      /KAKAOTALK|NAVER|Instagram|FBAN|FBAV|FB_IAB|Line\/|DaumApps|band|trill|Snapchat|Twitter|WhatsApp/i.test(ua) ||
+      /; ?wv[;)]/i.test(ua) ||                                   // 안드로이드 웹뷰
+      (/(iPhone|iPad|iPod)/i.test(ua) && !/Safari/i.test(ua)) || // iOS 웹뷰
+      (/(iPhone|iPad|iPod)/i.test(ua) && /GSA|CriOS|FxiOS|EdgiOS|Whale/i.test(ua) === false && !/Version\//i.test(ua));
+    // 터치 기기도 새 탭을 피한다
+    var 터치 = (navigator.maxTouchPoints || 0) > 1;
+    return !(모바일 || 인앱 || 터치);
+  })();
+
+  // 새 탭을 쓸 때만 target 을 붙인다
+  var TGT = NEWTAB ? ' target="_blank"' : '';
+
   var cats = ['전체'];
   items.forEach(function (p) { if (p.cat && cats.indexOf(p.cat) < 0) cats.push(p.cat); });
 
@@ -186,10 +209,10 @@
       : esc(p.no);
     var hot = p.hot ? ' 👍' : '';
     var review = p.video
-      ? '<a class="rev" href="' + esc(p.video) + '" target="_blank" rel="noopener" aria-label="리뷰 영상 보기" title="리뷰 영상">▶</a>'
+      ? '<a class="rev" href="' + esc(p.video) + '"' + TGT + ' rel="noopener" aria-label="리뷰 영상 보기" title="리뷰 영상">▶</a>'
       : '';
     el.innerHTML =
-      '<a class="stretch" href="' + esc(p.link) + '" target="_blank" rel="noopener nofollow sponsored" aria-label="' + esc(p.no) + '. ' + esc(p.name) + ' 최저가 보기"></a>' +
+      '<a class="stretch" href="' + esc(p.link) + '"' + TGT + ' rel="noopener nofollow sponsored" aria-label="' + esc(p.no) + '. ' + esc(p.name) + ' 최저가 보기"></a>' +
       '<div class="no">' + thumb + '</div>' +
       '<div class="body">' +
         '<p class="name">' + esc(p.no) + '. ' + esc(p.name) + hot + '</p>' +
