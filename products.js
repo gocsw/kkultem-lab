@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 23,
+    name: "Gelnaz 신발 전용 미니 세탁기",
+    cat: "주방",
+    desc: "통 안쪽 세척솔이 돌며 신발을 닦는 통돌이 · 한 번에 한두 켤레 · 세탁소 안 가고 집에서",
+    link: "https://link.coupang.com/a/glr0S6YRrM",
+    img: "shoes23.png",
+    hot: true },
+
   { no: 22,
     name: "가정용 고압 스팀청소기",
     cat: "주방",
