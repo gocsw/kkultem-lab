@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "주방",
     desc: "통 안쪽 세척솔이 돌며 신발을 닦는 통돌이 · 한 번에 한두 켤레 · 세탁소 안 가고 집에서",
     link: "https://link.coupang.com/a/glr0S6YRrM",
+    video: "https://youtube.com/shorts/ldZ_58zz3ZA",
     img: "shoes23.png",
     hot: true },
 
