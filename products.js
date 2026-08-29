@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 24,
+    name: "스마트폰 화면 확대기 (스크린 확대기)",
+    cat: "부모님",
+    desc: "접이식 스크린 확대기 · 거치대 열고 폰만 올리면 끝 · 높이 조절 · ⚠️ 확대라 화질이 좋아지진 않음",
+    link: "https://link.coupang.com/a/gBqx2kPdRY",
+    img: "big24.png",
+    hot: true },
+
   { no: 23,
     name: "Gelnaz 신발 전용 미니 세탁기",
     cat: "주방",
