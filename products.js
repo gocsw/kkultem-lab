@@ -17,6 +17,14 @@
 
 window.PRODUCTS = [
 
+  { no: 25,
+    name: "빨간금붕어 스핀탱크 배관 관통기 20m",
+    cat: "공구",
+    desc: "하수구·배관 막힘 뚫는 스프링 관통기 20m · 327,000원 (2026-09-04 확인) · 로켓배송",
+    link: "https://link.coupang.com/a/gLCtdTtvzg",
+    img: "radfish25.png",
+    hot: true },
+
   { no: 24,
     name: "스마트폰 화면 확대기 (스크린 확대기)",
     cat: "부모님",
