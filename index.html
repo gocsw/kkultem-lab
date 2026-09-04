@@ -142,6 +142,10 @@
   </footer>
 </div>
 
+<!-- 방문자 통계 (Vercel Web Analytics) · 쿠키 없음, 개인정보 수집 없음 -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
 <script src="products.js"></script>
 <script>
 (function () {
@@ -212,7 +216,9 @@
       ? '<a class="rev" href="' + esc(p.video) + '"' + TGT + ' rel="noopener" aria-label="리뷰 영상 보기" title="리뷰 영상">▶</a>'
       : '';
     el.innerHTML =
-      '<a class="stretch" href="' + esc(p.link) + '"' + TGT + ' rel="noopener nofollow sponsored" aria-label="' + esc(p.no) + '. ' + esc(p.name) + ' 최저가 보기"></a>' +
+      '<a class="stretch" href="' + esc(p.link) + '"' + TGT + ' rel="noopener nofollow sponsored"' +
+        ' data-no="' + esc(p.no) + '" data-name="' + esc(p.name) + '"' +
+        ' aria-label="' + esc(p.no) + '. ' + esc(p.name) + ' 최저가 보기"></a>' +
       '<div class="no">' + thumb + '</div>' +
       '<div class="body">' +
         '<p class="name">' + esc(p.no) + '. ' + esc(p.name) + hot + '</p>' +
@@ -238,6 +244,23 @@
 
   qEl.addEventListener('input', render);
   render();
+
+  /* ── 방문·클릭 기록 (Vercel Web Analytics) ─────────────────────
+     쿠팡 리포트가 0으로 나올 때, "아무도 안 온 것"과 "왔는데 집계가
+     안 된 것"을 구분하기 위해 우리 쪽에서도 클릭을 센다.
+     sendBeacon 방식이라 화면 이동을 막거나 늦추지 않는다.            */
+  listEl.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a.stretch') : null;
+    if (!a) return;
+    try {
+      if (window.va) {
+        window.va('event', {
+          name: '상품클릭',
+          data: { no: a.getAttribute('data-no'), name: a.getAttribute('data-name') }
+        });
+      }
+    } catch (err) { /* 기록 실패가 구매를 막으면 안 된다 */ }
+  }, true);
 })();
 </script>
 </body>
