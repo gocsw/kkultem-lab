@@ -22,6 +22,7 @@ window.PRODUCTS = [
     cat: "공구",
     desc: "하수구·배관 막힘 뚫는 스프링 관통기 20m · 327,000원 (2026-09-04 확인) · 로켓배송",
     link: "https://link.coupang.com/a/gLCtdTtvzg",
+    video: "https://youtube.com/shorts/A5rM4Ff7nQg",
     img: "radfish25.png",
     hot: true },
 
