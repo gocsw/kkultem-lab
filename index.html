@@ -72,6 +72,19 @@
         cursor:pointer;font-family:inherit;}
   .chip[aria-pressed="true"]{background:var(--mint);border-color:var(--mint);color:#fff;}
 
+  /* ── 플랫폼 탭 (쿠팡 / 토스쇼핑 …) ── */
+  .plats{display:flex;gap:0;border-bottom:2px solid var(--line);margin-bottom:2px;
+         overflow-x:auto;scrollbar-width:none;}
+  .plats::-webkit-scrollbar{display:none;}
+  .ptab{flex:none;font-size:14px;font-weight:800;padding:10px 16px 9px;
+        background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;
+        color:var(--faint);cursor:pointer;font-family:inherit;letter-spacing:-.02em;
+        display:flex;align-items:center;gap:5px;}
+  .ptab[aria-pressed="true"]{color:var(--mint-ink);border-bottom-color:var(--mint);}
+  .ptab .cnt{font-size:11px;font-weight:700;color:var(--faint);
+             background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:1px 6px;}
+  .ptab[aria-pressed="true"] .cnt{background:var(--mint-soft);border-color:var(--mint-soft);color:var(--mint-ink);}
+
   /* ── 상품 카드 (인포크 스타일: 큰 카드 · 왼쪽 사진 · 번호 상품명 · 전체 클릭) ── */
   .list{display:grid;gap:12px;}
   .item{position:relative;background:var(--card);border:1px solid var(--line);
@@ -110,7 +123,7 @@
 </head>
 <body>
 
-<div class="legal">이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+<div class="legal">이 페이지는 쿠팡 파트너스 등 제휴 마케팅 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
 
 <div class="wrap">
   <header>
@@ -129,6 +142,7 @@
   </header>
 
   <div class="tools">
+    <div class="plats" id="plats"></div>
     <input id="q" class="search" type="search" placeholder="상품 이름이나 번호로 검색" aria-label="상품 검색">
     <div class="cats" id="cats"></div>
   </div>
@@ -138,6 +152,7 @@
 
   <footer>
     위시버튼 꿀템 저장소 · 소개한 제품은 직접 고른 상품이며, 구매 시 판매액의 일부를 수수료로 제공받습니다.<br>
+    쿠팡 파트너스 등 각 제휴사의 정책에 따라 수수료가 지급됩니다.<br>
     가격·재고는 쿠팡에서 실시간으로 바뀌므로 링크에서 확인해 주세요.
   </footer>
 </div>
@@ -153,8 +168,10 @@
   var listEl = document.getElementById('list');
   var emptyEl = document.getElementById('empty');
   var catsEl = document.getElementById('cats');
+  var platsEl = document.getElementById('plats');
   var qEl = document.getElementById('q');
   var activeCat = '전체';
+  var activePlat = '전체';   // 쿠팡 / 토스쇼핑 …  상품의 plat 값으로 나눈다
 
   /* ── 이동 방식 판정 (한 번만 계산) ──────────────────────────────
      쿠팡 링크는 "앱 실행 → 300ms 뒤 웹" 구조의 중간 페이지를 거친다.
@@ -178,6 +195,34 @@
 
   // 새 탭을 쓸 때만 target 을 붙인다
   var TGT = NEWTAB ? ' target="_blank"' : '';
+
+  /* ── 플랫폼 탭 ────────────────────────────────────────────
+     상품에 plat 을 안 적으면 '쿠팡'으로 본다(기존 상품 전부 해당).
+     플랫폼이 하나뿐이면 탭을 아예 숨긴다.                        */
+  function platOf(p) { return p.plat || '쿠팡'; }
+  var plats = [];
+  items.forEach(function (p) { var v = platOf(p); if (plats.indexOf(v) < 0) plats.push(v); });
+
+  if (plats.length > 1) {
+    ['전체'].concat(plats).forEach(function (v) {
+      var n = v === '전체' ? items.length : items.filter(function (p) { return platOf(p) === v; }).length;
+      var b = document.createElement('button');
+      b.className = 'ptab';
+      b.type = 'button';
+      b.innerHTML = esc(v) + '<span class="cnt">' + n + '</span>';
+      b.setAttribute('aria-pressed', v === '전체' ? 'true' : 'false');
+      b.addEventListener('click', function () {
+        activePlat = v;
+        [].forEach.call(platsEl.children, function (x) {
+          x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+        });
+        render();
+      });
+      platsEl.appendChild(b);
+    });
+  } else {
+    platsEl.hidden = true;
+  }
 
   var cats = ['전체'];
   items.forEach(function (p) { if (p.cat && cats.indexOf(p.cat) < 0) cats.push(p.cat); });
@@ -232,6 +277,7 @@
   function render() {
     var q = qEl.value.trim().toLowerCase();
     var shown = items.filter(function (p) {
+      if (activePlat !== '전체' && platOf(p) !== activePlat) return false;
       if (activeCat !== '전체' && p.cat !== activeCat) return false;
       if (!q) return true;
       return (String(p.no) + ' ' + (p.name || '') + ' ' + (p.desc || '') + ' ' + (p.cat || ''))
