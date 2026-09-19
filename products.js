@@ -18,6 +18,15 @@
 
 window.PRODUCTS = [
 
+  { no: 26,
+    name: "슈즈 폼 클리너 운동화 세정제 신발클리너 간편 세척",
+    cat: "케어",
+    desc: "누렇게 찌든 운동화에 거품 바르고 문지르면 하얗게 · 11,300원 (2026-09-19 확인)",
+    link: "https://link.coupang.com/a/g9860C1NYW",
+    video: "https://youtube.com/shorts/qbSsb0xg9Gc",
+    img: "shoefoam26.png",
+    hot: true },
+
   { no: 25,
     name: "빨간금붕어 스핀탱크 배관 관통기 20m",
     cat: "공구",
@@ -106,15 +115,6 @@ window.PRODUCTS = [
     link: "https://link.coupang.com/a/gjkKIdEK3E",
     video: "https://youtube.com/shorts/77LGLxqdqfk",
     img: "diffuser16.png",
-    hot: true },
-
-  { no: 15,
-    name: "전동 세제 설거지 브러시",
-    cat: "주방",
-    desc: "버튼 누르면 세제 나오고 360도 회전 · 손목 부담 줄이고 걸이 보관",
-    link: "https://link.coupang.com/a/fzbb14YmGa",
-    video: "https://youtube.com/shorts/FivFth7wbRk",
-    img: "brush15.png",
     hot: true },
 
   { no: 14,
@@ -225,5 +225,4 @@ window.PRODUCTS = [
     desc: "책상에 올려두는 순간 물 마시는 양이 달라집니다",
     link: "https://link.coupang.com/a/gjkLkGwhVY",
     video: "https://youtube.com/shorts/grpgLWuri2c" }
-
 ];
