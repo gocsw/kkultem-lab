@@ -23,7 +23,7 @@ window.PRODUCTS = [
     cat: "차량",
     desc: "밸브만 열면 알아서 부풀어 두툼한 침대 · 차박·캠핑·손님용 · 5cm · 36,900원 (2026-09-20 확인)",
     link: "https://link.coupang.com/a/hbUIm7fMGG",
-    video: "https://youtube.com/shorts/PENDING",
+    video: "https://youtube.com/shorts/_zvi3aAE-6g",
     img: "mat27.png",
     hot: true },
 
