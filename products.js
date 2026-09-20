@@ -23,6 +23,7 @@ window.PRODUCTS = [
     cat: "공구",
     desc: "피복 안 벗기고 전선 넣고 펜치로 눌러 1분 연결 · 테이프 불필요 · T자 분기 가능 · 100개 19,200원(개당 192원, 2026-09-20 확인)",
     link: "https://link.coupang.com/a/hb51hkPSiO",
+    video: "https://youtube.com/shorts/9n3FZX3imm4",
     img: "conn31.png",
     hot: true },
 
