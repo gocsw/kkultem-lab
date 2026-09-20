@@ -18,6 +18,14 @@
 
 window.PRODUCTS = [
 
+  { no: 32,
+    name: "Klein Tools 마그네틱 와이어 풀러 키트 (9m 야광 낚싯대)",
+    cat: "공구",
+    desc: "벽 안 전선을 자석으로 슥 끌어당기는 프로용 배선 도구 · 벽 안 뜯을 필요 없이 원하는 자리로 · 9m 야광 낚싯대+자석 · 224,000원 (2026-09-20 확인)",
+    link: "https://link.coupang.com/a/hb7KyGcQyy",
+    img: "mag32.png",
+    hot: true },
+
   { no: 31,
     name: "2핀 무탈피 전선 커넥터 전기선 연결잭 (100개)",
     cat: "공구",
