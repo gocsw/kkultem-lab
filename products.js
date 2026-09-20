@@ -23,7 +23,7 @@ window.PRODUCTS = [
     cat: "공구",
     desc: "전선 넣고 쥐면 피복이 알아서 벗겨지는 자동 탈피기 · 굵기 자동 맞춤 · 68,340원 (2026-09-20 확인)",
     link: "https://link.coupang.com/a/hbXbXDV5P3",
-    video: "https://youtube.com/shorts/PENDING",
+    video: "https://youtube.com/shorts/hz2rnjnlNIQ",
     img: "strip28.png",
     hot: true },
 
