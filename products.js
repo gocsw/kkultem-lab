@@ -23,6 +23,7 @@ window.PRODUCTS = [
     cat: "공구",
     desc: "벽 안 전선을 자석으로 슥 끌어당기는 프로용 배선 도구 · 벽 안 뜯을 필요 없이 원하는 자리로 · 9m 야광 낚싯대+자석 · 224,000원 (2026-09-20 확인)",
     link: "https://link.coupang.com/a/hb7KyGcQyy",
+    video: "https://youtube.com/shorts/6EewS6vKE_o",
     img: "mag32.png",
     hot: true },
 
