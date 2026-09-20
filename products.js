@@ -23,6 +23,7 @@ window.PRODUCTS = [
     cat: "여름",
     desc: "물속까지 훤히 보이는 편광 렌즈 · 눈부신 반사광 차단 · 자외선 99.99% 차단 · 낚시·운전·등산·캠핑 · 9가지 색상 · 23,900원 (2026-09-20 확인)",
     link: "https://link.coupang.com/a/hb36S3V9s4",
+    video: "https://youtube.com/shorts/9UrE-0Tk9ao",
     img: "sun30.png",
     hot: true },
 
