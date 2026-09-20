@@ -18,6 +18,14 @@
 
 window.PRODUCTS = [
 
+  { no: 29,
+    name: "서윤픽 접이식 LED 캠핑 태양광 랜턴 5패널 축구공 랜턴",
+    cat: "여름",
+    desc: "축구공처럼 접었다 4면 활짝 펴지는 태양광 랜턴 · 콘센트 없이 햇빛 충전 · 5단계 밝기 · 걸이형 · 캠핑·낚시·정전 대비 · 23,000원 (2026-09-20 확인)",
+    link: "https://link.coupang.com/a/hb1kkOFgxo",
+    img: "lamp29.png",
+    hot: true },
+
   { no: 28,
     name: "조카리 자동형 와이어 스트립퍼 T20050",
     cat: "공구",
