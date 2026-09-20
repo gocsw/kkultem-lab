@@ -18,6 +18,14 @@
 
 window.PRODUCTS = [
 
+  { no: 31,
+    name: "2핀 무탈피 전선 커넥터 전기선 연결잭 (100개)",
+    cat: "공구",
+    desc: "피복 안 벗기고 전선 넣고 펜치로 눌러 1분 연결 · 테이프 불필요 · T자 분기 가능 · 100개 19,200원(개당 192원, 2026-09-20 확인)",
+    link: "https://link.coupang.com/a/hb51hkPSiO",
+    img: "conn31.png",
+    hot: true },
+
   { no: 30,
     name: "가빈 빅사이즈 편광 스포츠 선글라스 G30",
     cat: "여름",
