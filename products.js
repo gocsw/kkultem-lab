@@ -18,6 +18,15 @@
 
 window.PRODUCTS = [
 
+  { no: 27,
+    name: "디센느 자충매트 고속 자동충전 에어매트 확장형 캠핑 매트 5cm",
+    cat: "차량",
+    desc: "밸브만 열면 알아서 부풀어 두툼한 침대 · 차박·캠핑·손님용 · 5cm · 36,900원 (2026-09-20 확인)",
+    link: "https://link.coupang.com/a/hbUIm7fMGG",
+    video: "https://youtube.com/shorts/PENDING",
+    img: "mat27.png",
+    hot: true },
+
   { no: 26,
     name: "슈즈 폼 클리너 운동화 세정제 신발클리너 간편 세척",
     cat: "케어",
