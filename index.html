@@ -86,8 +86,8 @@
   .ptab[aria-pressed="true"] .cnt{background:var(--mint-soft);border-color:var(--mint-soft);color:var(--mint-ink);}
 
   /* ── 상품 카드 (인포크 스타일: 큰 카드 · 왼쪽 사진 · 번호 상품명 · 전체 클릭) ── */
-  .list{display:grid;gap:12px;}
-  .item{position:relative;background:var(--card);border:1px solid var(--line);
+  .list{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;}
+  .item{position:relative;min-width:0;background:var(--card);border:1px solid var(--line);
         border-radius:18px;padding:14px 16px;display:flex;gap:14px;align-items:center;
         box-shadow:0 1px 3px rgba(15,34,51,.05);
         transition:box-shadow .15s, transform .12s, border-color .15s;}
