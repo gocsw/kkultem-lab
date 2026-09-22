@@ -18,6 +18,15 @@
 
 window.PRODUCTS = [
 
+  { no: 37,
+    name: "원블리스 마늘 까기 골무 엄지칼 (4개입)",
+    cat: "주방",
+    desc: "엄지에 끼우고 쓱 긁으면 마늘 껍질이 순식간에 벗겨지는 골무 엄지칼 · 감자 껍질·딸기 꼭지·쪽파 손질·텃밭 수확까지 · 칼 안 대고 손도 안 다치게 · 4개입 · 9,800원 (59%, 2026-09-22 확인)",
+    link: "https://link.coupang.com/a/hfKC3Grwaq",
+    video: "https://youtube.com/shorts/PENDING37",
+    img: "garlic37.png",
+    hot: true },
+
   { no: 36,
     name: "민루플 3in1 무선 전동 손톱깎이 (LED 조명·USB-C 충전)",
     cat: "케어",
