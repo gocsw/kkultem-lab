@@ -18,6 +18,15 @@
 
 window.PRODUCTS = [
 
+  { no: 36,
+    name: "민루플 3in1 무선 전동 손톱깎이 (LED 조명·USB-C 충전)",
+    cat: "케어",
+    desc: "손톱에 갖다 대기만 하면 자동으로 다듬어주는 전동 손톱깎이 · 깎인 손톱이 통 안에 모여 치울 필요 없음 · LED 조명으로 안 아프게 · 안전 구조라 아이·부모님도 안심 · 저소음·휴대용 · 15,990원 (56%, 2026-09-22 확인)",
+    link: "https://link.coupang.com/a/hfCPljTeGO",
+    video: "https://youtube.com/shorts/PENDING36",
+    img: "nail36.png",
+    hot: true },
+
   { no: 35,
     name: "누아레모 단백질 염색샴푸 (새치커버 다크브라운 200ml)",
     cat: "케어",
