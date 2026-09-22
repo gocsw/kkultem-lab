@@ -18,6 +18,14 @@
 
 window.PRODUCTS = [
 
+  { no: 33,
+    name: "라온 메탈 제트 플레임 휴대용 캠핑토치",
+    cat: "여름",
+    desc: "한 손에 쏙 들어오는 휴대용 제트 화염 토치 · 부탄가스만 꽂으면 끝 · 젖은 장작·숯불도 순식간에 점화 · 천 도 넘는 강력 화력 · 사방향 냉각 · 13,320원 (10%, 2026-09-22 확인)",
+    link: "https://link.coupang.com/a/hfgrYqiq1Q",
+    img: "torch33.png",
+    hot: true },
+
   { no: 32,
     name: "Klein Tools 마그네틱 와이어 풀러 키트 (9m 야광 낚싯대)",
     cat: "공구",
