@@ -23,6 +23,7 @@ window.PRODUCTS = [
     cat: "여름",
     desc: "한 손에 쏙 들어오는 휴대용 제트 화염 토치 · 부탄가스만 꽂으면 끝 · 젖은 장작·숯불도 순식간에 점화 · 천 도 넘는 강력 화력 · 사방향 냉각 · 13,320원 (10%, 2026-09-22 확인)",
     link: "https://link.coupang.com/a/hfgrYqiq1Q",
+    video: "https://youtube.com/shorts/7CxameEPbhE",
     img: "torch33.png",
     hot: true },
 
