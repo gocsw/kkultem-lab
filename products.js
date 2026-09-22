@@ -23,7 +23,7 @@ window.PRODUCTS = [
     cat: "주방",
     desc: "엄지에 끼우고 쓱 긁으면 마늘 껍질이 순식간에 벗겨지는 골무 엄지칼 · 감자 껍질·딸기 꼭지·쪽파 손질·텃밭 수확까지 · 칼 안 대고 손도 안 다치게 · 4개입 · 9,800원 (59%, 2026-09-22 확인)",
     link: "https://link.coupang.com/a/hfKC3Grwaq",
-    video: "https://youtube.com/shorts/PENDING37",
+    video: "https://youtube.com/shorts/TYXe_w5HB3w",
     img: "garlic37.png",
     hot: true },
 
