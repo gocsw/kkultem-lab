@@ -23,6 +23,7 @@ window.PRODUCTS = [
     cat: "공구",
     desc: "무거운 짐 싣고 버튼만 누르면 전동으로 계단을 오르내리는 운반차 · 평지에선 일반 카트처럼 · 냉장고·세탁기·이삿짐·물박스 운반 · 이사·택배·창고 필수 장비 · 360,990원 (12%, 2026-09-22 확인)",
     link: "https://link.coupang.com/a/hfqdNGogou",
+    video: "https://youtube.com/shorts/spFee5NHjAQ",
     img: "cart34.png",
     hot: true },
 
