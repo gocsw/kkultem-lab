@@ -23,6 +23,7 @@ window.PRODUCTS = [
     cat: "케어",
     desc: "감기만 하면 새치·흰머리 커버되는 컬러 샴푸 · 따로 하나하나 바를 필요 없이 샴푸하듯 편하게 · 얼룩 없이 다크브라운 · 단백질 보호 성분 · 29,640원 (24%, 2026-09-22 확인)",
     link: "https://link.coupang.com/a/hfAsIclc9Q",
+    video: "https://youtube.com/shorts/h8jO7QaAxn8",
     img: "shampoo35.png",
     hot: true },
 
